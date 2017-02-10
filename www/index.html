@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>Main Page</title>
+    <script src="js/scripts.js"></script>
+    <script src="js/sidenav.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div id="header" style="z-index: 50"></div>
+<div id="menuTrigger" style="position: fixed; height: 100%; left: 0; width: 0.5%; z-index: 1000"></div>
+<div id="mainContent" style="z-index: 0">
+    <div class="materialCard">
+        Писал стихи красиво только Фет,<br>
+        А я творю нелепо, нежно-грубовато...<br>
+        Нецарскосельский, запорожский я поэт!!!<br>
+        И стих О НЕЙ с трудом сложил без мата.<br>
+        <br>
+        Мой друг связал С НЕЙ замысел большой,<br>
+        пылая платонической любовью...<br>
+        Меня просил: "Твори, Санёк, с душой!"<br>
+        Пишу... Но помню лишь глаза ЕЁ коровьи.<br>
+        <br>
+        ЕЁ светилом некто называл,<br>
+        Такой шутник иль циник беспощадный!<br>
+        ТЫ - Сириус (вот так бы я сказал)!<br>
+        Такой же недалёкий и прохладный...<br>
+        <br>
+        Лица ЕЁ запомнить не могу...<br>
+        Но ум ЕЁ - завидный капитал!<br>
+        Цветёт он, как малина на снегу.<br>
+        ТАКИХ мадам лицей наш не встречал...<br>
+        <br>
+        ЕЁ прозванием я с толку сбит вовек.<br>
+        Карелия... Иль ТЫ там срок мотаешь???<br>
+        Так объясни мне, чудо-человек:<br>
+        Зачем ТЫ в классе раз в году бываешь?<br>
+        <br>
+        Порой себя зовешь ТЫ - Rauh Кира.<br>
+        Пожалуй, идиотский псевдоним.<br>
+        ТЫ, вероятно, из друго мира...<br>
+        Мы связь с ним в этом веке создадим?<br>
+    </div>
+</div>
+<aside class="js-side-nav side-nav" style="z-index: 100; width: 307px">
+    <nav class="js-side-nav__container side-nav__container" id="sideNav">
+        <header class="side-nav__header" style="position: relative; font-size: 14px; line-height: 24px;">
+            <div id="userInfo" style="position: relative; padding: 32px 32px 0; margin-bottom: 8px; height: 100%;">
+                <img style="border-radius: 50%" height="64px" width="64px" src="img/profile_default.jpg"><br><br>
+                <span style="margin-top: 16px; font-weight: 500;">Юный Падаван</span><br>
+                <span style="padding-bottom: 16px; font-weight: 400;" id="userEmail">E-Mail</span>
+            </div>
+        </header>
+        <ul class="side-nav__content">
+            <li><i class="material-icons">home</i>Новости</li>
+            <li><i class="material-icons">done_all</i>Задачи</li>
+            <li><i class="material-icons">error_outline</i>Правила</li>
+            <li><i class="material-icons">info</i>О проекте</li>
+        </ul>
+    </nav>
+</aside>
+<div id="sideNav_bg"></div>
+<div id="clickHolder" style="position:fixed; left: 300px; top: 0;height: 100%; width: 100%; z-index: 100">
+</div>
+<div id="loginContainer" style="z-index: 10000">
+    <form id="loginForm">
+        <label for="emailInput">E-Mail</label>
+        <input type="email" class="form-control" id="emailInput" name="email" placeholder="E-Mail" style="margin-bottom: 10px;" required>
+        <label for="passInput">Пароль</label>
+        <input type="password" class="form-control" id="passInput" name="pass" placeholder="Пароль" required>
+        <div id="errorCode" style="margin: 13px 0 13px 0; font-size: 10pt; color: red"> </div>
+        <input type="submit" id="registerButton" class="btn btn-success" style="width: 49%" value="Зарегестрироваться">
+        <input type="submit" id="loginButton" class="btn btn-primary" style="width: 49%" value="Войти">
+    </form>
+</div>
+</body>
+</html>
